@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: black;
+  color: white;
+  line-height: 1.6;
+}
+
+.wrapper {
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 64, 50, 0.8),
+      rgba(71, 17, 116, 0.9)
+    ),
+    url("../images/background.jpg") no-repeat center/cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-right {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  width: 80px;
+  margin: 1.5rem;
+}
+
+.header-right .fas {
+  margin: 1.5rem 0.3rem 0 0;
+}
+
+.header-right .fa-twitter {
+  margin: 1.5rem 0.6rem 0 0;
+  color: #fff;
+}
+
+.main-content {
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  width: 26%;
+}
+
+form {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 3px;
+  padding: 15px;
+  width: 100%;
+  outline: 0;
+  color: #fff;
+}
+
+textarea {
+  display: block;
+  resize: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 3px;
+  width: 100%;
+  padding: 15px;
+  outline: 0;
+  color: #fff;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 250px;
+  height: 30px;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #ff372b;
+}
+
+.btn:hover {
+  background-color: #a9221b;
+  color: #333;
+}
+
+.text-container {
+  margin-left: 25px;
+}
+
+.text-container h1 {
+  font-size: 3vw;
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
+
+.text-container p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1206px) {
+  .header-right {
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
